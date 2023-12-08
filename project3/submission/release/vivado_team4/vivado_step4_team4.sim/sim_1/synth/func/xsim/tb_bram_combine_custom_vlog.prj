@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/ec67/hdl" --include "../../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/ee60/hdl" --include "../../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/f0b6/hdl/verilog" --include "../../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/66be/hdl/verilog" --include "/home/user/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"tb_bram_combine_custom_func_synth.v" \
+"../../../../../tb_matmul.srcs/sim_1/imports/task1_test_bench/tb_bram_combine_custom.v" \
+
+# Do not sort compile order
+nosort

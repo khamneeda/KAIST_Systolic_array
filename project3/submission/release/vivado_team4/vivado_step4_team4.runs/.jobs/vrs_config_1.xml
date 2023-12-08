@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fpga_axi_bram_ctrl_2_0_synth_1" LaunchDir="/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_axi_bram_ctrl_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fpga_axi_bram_ctrl_3_0_synth_1" LaunchDir="/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_axi_bram_ctrl_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fpga_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fpga_axi_bram_ctrl_1_0_synth_1" LaunchDir="/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_axi_bram_ctrl_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fpga_proc_sys_reset_0_0_synth_1" LaunchDir="/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fpga_processing_system7_0_0_synth_1" LaunchDir="/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fpga_mat_mul_system_0_0_synth_1" LaunchDir="/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_mat_mul_system_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

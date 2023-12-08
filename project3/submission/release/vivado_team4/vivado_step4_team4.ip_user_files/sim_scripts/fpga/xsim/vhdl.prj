@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/fpga/ip/fpga_proc_sys_reset_0_0/sim/fpga_proc_sys_reset_0_0.vhd" \
+"../../../bd/fpga/ip/fpga_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_b08f_psr_aclk_0.vhd" \
+"../../../bd/fpga/ip/fpga_axi_bram_ctrl_0_0/sim/fpga_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/fpga/ip/fpga_axi_bram_ctrl_1_0/sim/fpga_axi_bram_ctrl_1_0.vhd" \
+"../../../bd/fpga/ip/fpga_axi_bram_ctrl_2_0/sim/fpga_axi_bram_ctrl_2_0.vhd" \
+"../../../bd/fpga/ip/fpga_axi_bram_ctrl_3_0/sim/fpga_axi_bram_ctrl_3_0.vhd" \
+
+nosort

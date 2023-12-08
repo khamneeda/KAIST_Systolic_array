@@ -1,0 +1,15 @@
+project1/data/weight
+project1/**/cuda*
+project1/*.pyc
+project1/*/*.so
+.vscode
+project1/**/__pycache__
+project1/*/*.log
+*/*/.DS_Store
+*/*/~*
+*.pyc
+*.log
+*.run
+*.weights
+/build
+jiyong/*

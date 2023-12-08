@@ -1,0 +1,987 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Dec  1 05:01:47 2023
+# Process ID: 1622
+# Current directory: /home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_mat_mul_system_0_0_synth_1
+# Command line: vivado -log fpga_mat_mul_system_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_mat_mul_system_0_0.tcl
+# Log file: /home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_mat_mul_system_0_0_synth_1/fpga_mat_mul_system_0_0.vds
+# Journal file: /home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_mat_mul_system_0_0_synth_1/vivado.jou
+# Running On: ac441d3eae35, OS: Linux, CPU Frequency: , CPU Physical cores: 1, Host memory: 14647 MB
+#-----------------------------------------------------------
+source fpga_mat_mul_system_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1569.668 ; gain = 2.160 ; free physical = 5920 ; free virtual = 10730
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fpga_mat_mul_system_0_0
+Command: synth_design -top fpga_mat_mul_system_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1749
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/user/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2359.766 ; gain = 378.172 ; free physical = 179 ; free virtual = 4180
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.285; parent = 1339.765; children = 105.521
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3563.727; parent = 2365.742; children = 1197.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_mat_mul_system_0_0' [/home/user/vivado_step4_team4/vivado_step4_team4.gen/sources_1/bd/fpga/ip/fpga_mat_mul_system_0_0/synth/fpga_mat_mul_system_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'mat_mul_system' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/matmul_system.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/matmul_system.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/matmul_system.v:308]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/matmul_system.v:128]
+INFO: [Synth 8-6157] synthesizing module 'ram_array_read_bias' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram_array_read_bias.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ram' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ram_array_read_bias' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram_array_read_bias.v:8]
+INFO: [Synth 8-6157] synthesizing module 'w_ram_address_generator' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/w_ram_address_generator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'w_ram_address_generator' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/w_ram_address_generator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'a_ram_address_generator' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/a_ram_address_generator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'a_ram_address_generator' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/a_ram_address_generator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sys_arr' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/sys_arr.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pe' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/pe.v:3]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/pe.v:25]
+INFO: [Synth 8-6157] synthesizing module 'buffer' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/buffer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'buffer' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/buffer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/multiplier.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/multiplier.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized0' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized0' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'buffer__parameterized0' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/buffer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'buffer__parameterized0' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/buffer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pe' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/pe.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sys_arr' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/sys_arr.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sys_control' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/sys_control.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'sys_control' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/sys_control.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ram_array_write_bias' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram_array_write_bias.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ram__parameterized0' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ram__parameterized0' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ram_array_write_bias' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram_array_write_bias.v:8]
+INFO: [Synth 8-6157] synthesizing module 'o_ram_address_generator' [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/o_ram_address_generator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'o_ram_address_generator' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/o_ram_address_generator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mat_mul_system' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/matmul_system.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_mat_mul_system_0_0' (0#1) [/home/user/vivado_step4_team4/vivado_step4_team4.gen/sources_1/bd/fpga/ip/fpga_mat_mul_system_0_0/synth/fpga_mat_mul_system_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element read_addr_reg_reg was removed.  [/home/user/vivado_step4_team4/vivado_step4_team4.srcs/sources_1/imports/task1_verilog_steleton_code/ram_array_write_bias.v:43]
+WARNING: [Synth 8-7129] Port bram_col_size[9] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[8] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[7] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[6] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[5] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[4] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[3] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[2] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[1] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[0] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[9] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[8] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[7] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[6] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[5] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[4] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[3] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[2] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[1] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[0] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[9] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[8] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[7] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[6] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[5] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[4] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[3] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[2] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[1] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[0] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[31] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[30] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[29] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[28] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[27] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[26] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[25] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[24] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[23] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[22] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[21] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[20] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[19] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[18] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[17] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[16] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[31] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[30] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[29] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[28] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[27] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[26] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[25] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[24] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[23] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[22] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[21] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[20] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[19] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[18] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[17] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_w_bram[16] in module mat_mul_system is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 2459.793 ; gain = 478.199 ; free physical = 1222 ; free virtual = 3503
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1641.514; parent = 1398.035; children = 249.702
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3941.965; parent = 2459.793; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 2478.250 ; gain = 496.656 ; free physical = 1197 ; free virtual = 3485
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1641.514; parent = 1398.035; children = 249.702
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3960.422; parent = 2478.250; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 2478.250 ; gain = 496.656 ; free physical = 1189 ; free virtual = 3478
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1641.514; parent = 1398.035; children = 249.702
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3960.422; parent = 2478.250; children = 1482.172
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2478.926 ; gain = 0.051 ; free physical = 1660 ; free virtual = 3967
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2622.727 ; gain = 0.000 ; free physical = 1408 ; free virtual = 3778
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.5 . Memory (MB): peak = 2623.273 ; gain = 0.531 ; free physical = 1312 ; free virtual = 3690
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/user/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:51 . Memory (MB): peak = 2623.391 ; gain = 641.797 ; free physical = 1290 ; free virtual = 3683
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1641.514; parent = 1398.035; children = 249.702
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4088.590; parent = 2606.418; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:51 . Memory (MB): peak = 2623.391 ; gain = 641.797 ; free physical = 1288 ; free virtual = 3681
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1641.514; parent = 1398.035; children = 249.702
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4088.711; parent = 2606.539; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:51 . Memory (MB): peak = 2623.391 ; gain = 641.797 ; free physical = 1279 ; free virtual = 3673
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1641.514; parent = 1398.035; children = 249.702
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4088.738; parent = 2606.566; children = 1482.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mat_mul_system'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                              101
+                 iSTATE5 |                              001 |                              110
+                  iSTATE |                              010 |                              000
+                 iSTATE0 |                              011 |                              001
+                 iSTATE1 |                              100 |                              010
+                 iSTATE2 |                              101 |                              011
+                 iSTATE3 |                              110 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mat_mul_system'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:55 . Memory (MB): peak = 2623.391 ; gain = 641.797 ; free physical = 1217 ; free virtual = 3634
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1641.514; parent = 1398.035; children = 249.702
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4090.453; parent = 2608.281; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 81    
+	   3 Input   22 Bit       Adders := 5     
+	   2 Input   16 Bit       Adders := 16    
+	   3 Input   15 Bit       Adders := 2     
+	   3 Input   14 Bit       Adders := 1     
+	   3 Input   13 Bit       Adders := 1     
+	   4 Input   12 Bit       Adders := 15    
+	   2 Input   11 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 31    
+	   3 Input   10 Bit       Adders := 26    
++---Registers : 
+	               32 Bit    Registers := 82    
+	               16 Bit    Registers := 212   
+	               10 Bit    Registers := 26    
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	              32x32  Multipliers := 64    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 8     
+	              16K Bit	(1024 X 16 bit)          RAMs := 16    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 137   
+	  10 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 160   
+	   2 Input   11 Bit        Muxes := 3     
+	   7 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 106   
+	  10 Input   10 Bit        Muxes := 2     
+	   7 Input   10 Bit        Muxes := 14    
+	   7 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 55    
+	  10 Input    1 Bit        Muxes := 9     
+	   7 Input    1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP counter2, operation Mode is: A*B+1.
+DSP Report: operator counter2 is absorbed into DSP counter2.
+DSP Report: operator enable_w_bram1 is absorbed into DSP counter2.
+DSP Report: Generating DSP enable_w_bram1, operation Mode is: A*B.
+DSP Report: operator enable_w_bram1 is absorbed into DSP enable_w_bram1.
+DSP Report: Generating DSP addr_w_bram1, operation Mode is: (D+A)*B.
+DSP Report: operator addr_w_bram1 is absorbed into DSP addr_w_bram1.
+DSP Report: operator addr_w_bram2 is absorbed into DSP addr_w_bram1.
+DSP Report: Generating DSP addr_w_bram0, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator addr_w_bram0 is absorbed into DSP addr_w_bram0.
+DSP Report: Generating DSP w_ram_write_req1, operation Mode is: (C:0x2)+A*B.
+DSP Report: operator w_ram_write_req1 is absorbed into DSP w_ram_write_req1.
+DSP Report: operator enable_w_bram1 is absorbed into DSP w_ram_write_req1.
+DSP Report: Generating DSP counter2, operation Mode is: A*B+1.
+DSP Report: operator counter2 is absorbed into DSP counter2.
+DSP Report: operator enable_a_bram1 is absorbed into DSP counter2.
+DSP Report: Generating DSP enable_a_bram1, operation Mode is: A*B.
+DSP Report: operator enable_a_bram1 is absorbed into DSP enable_a_bram1.
+DSP Report: Generating DSP addr_a_bram2, operation Mode is: (D+A)*B.
+DSP Report: operator addr_a_bram2 is absorbed into DSP addr_a_bram2.
+DSP Report: operator addr_a_bram3 is absorbed into DSP addr_a_bram2.
+DSP Report: Generating DSP addr_a_bram1, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator addr_a_bram1 is absorbed into DSP addr_a_bram1.
+DSP Report: Generating DSP addr_a_bram2, operation Mode is: (D+A)*B.
+DSP Report: operator addr_a_bram2 is absorbed into DSP addr_a_bram2.
+DSP Report: operator addr_a_bram3 is absorbed into DSP addr_a_bram2.
+DSP Report: Generating DSP addr_a_bram1, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator addr_a_bram1 is absorbed into DSP addr_a_bram1.
+DSP Report: Generating DSP a_ram_write_req1, operation Mode is: (C:0x2)+A*B.
+DSP Report: operator a_ram_write_req1 is absorbed into DSP a_ram_write_req1.
+DSP Report: operator enable_a_bram1 is absorbed into DSP a_ram_write_req1.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP add_/out, operation Mode is: C+A*B.
+DSP Report: operator add_/out is absorbed into DSP add_/out.
+DSP Report: operator mul_/out is absorbed into DSP add_/out.
+DSP Report: Generating DSP enable_o_bram2, operation Mode is: A*B.
+DSP Report: operator enable_o_bram2 is absorbed into DSP enable_o_bram2.
+DSP Report: Generating DSP addr_o_bram1, operation Mode is: (D+A)*B.
+DSP Report: operator addr_o_bram1 is absorbed into DSP addr_o_bram1.
+DSP Report: operator addr_o_bram2 is absorbed into DSP addr_o_bram1.
+DSP Report: Generating DSP addr_o_bram0, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator addr_o_bram0 is absorbed into DSP addr_o_bram0.
+DSP Report: Generating DSP enable_o_bram1, operation Mode is: A*B+1.
+DSP Report: operator enable_o_bram1 is absorbed into DSP enable_o_bram1.
+DSP Report: operator enable_o_bram2 is absorbed into DSP enable_o_bram1.
+DSP Report: Generating DSP p_2_out, operation Mode is: C+A*B.
+DSP Report: operator p_2_out is absorbed into DSP p_2_out.
+DSP Report: operator p_0_in is absorbed into DSP p_2_out.
+DSP Report: Generating DSP a_ram_read_start_addr0, operation Mode is: A*B.
+DSP Report: operator a_ram_read_start_addr0 is absorbed into DSP a_ram_read_start_addr0.
+DSP Report: Generating DSP a_ram_read_start_addr1, operation Mode is: C+A*B.
+DSP Report: operator a_ram_read_start_addr1 is absorbed into DSP a_ram_read_start_addr1.
+DSP Report: operator a_ram_read_start_addr2 is absorbed into DSP a_ram_read_start_addr1.
+DSP Report: Generating DSP w_ram_read_start_addr0, operation Mode is: A*B.
+DSP Report: operator w_ram_read_start_addr0 is absorbed into DSP w_ram_read_start_addr0.
+DSP Report: Generating DSP w_ram_read_start_addr1, operation Mode is: C+A*B.
+DSP Report: operator w_ram_read_start_addr1 is absorbed into DSP w_ram_read_start_addr1.
+DSP Report: operator w_ram_read_start_addr2 is absorbed into DSP w_ram_read_start_addr1.
+WARNING: [Synth 8-7129] Port bram_col_size[9] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[8] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[7] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[6] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[5] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[4] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[3] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[2] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[1] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[0] in module o_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[9] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[8] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[7] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[6] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[5] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[4] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[3] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[2] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[1] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[0] in module a_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[9] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[8] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[7] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[6] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[5] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[4] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[3] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[2] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[1] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_col_size[0] in module w_ram_address_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[31] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[30] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[29] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[28] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[27] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[26] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[25] in module mat_mul_system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_out_a_bram[24] in module mat_mul_system is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:32 . Memory (MB): peak = 2623.391 ; gain = 641.797 ; free physical = 5670 ; free virtual = 8283
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1708.399; parent = 1445.878; children = 262.521
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_array_read_bias: | genblk2[0].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[1].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[2].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[3].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[4].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[5].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[6].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[7].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[0].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[1].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[2].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[3].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[4].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[5].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[6].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[7].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------------+-----------+----------------------+------------------+
+|inst/o_ram  | genblk1[7].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[6].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[5].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[4].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[3].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[2].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[1].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[0].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
++------------+-------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|w_ram_address_generator | A*B+1            | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|w_ram_address_generator | A*B              | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|w_ram_address_generator | (D+A)*B          | 10     | 10     | -      | 10     | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|w_ram_address_generator | PCIN+(A:0x0):B+C | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|w_ram_address_generator | (C:0x2)+A*B      | 10     | 10     | 2      | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | A*B+1            | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | A*B              | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | (D+A)*B          | 10     | 10     | -      | 10     | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|a_ram_address_generator | PCIN+(A:0x0):B+C | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | (D+A)*B          | 10     | 10     | -      | 10     | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|a_ram_address_generator | PCIN+(A:0x0):B+C | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | (C:0x2)+A*B      | 10     | 10     | 2      | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B            | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|o_ram_address_generator | A*B              | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|o_ram_address_generator | (D+A)*B          | 10     | 10     | -      | 10     | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|o_ram_address_generator | PCIN+(A:0x0):B+C | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|o_ram_address_generator | A*B+1            | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mat_mul_system          | C+A*B            | 10     | 10     | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mat_mul_system          | A*B              | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mat_mul_system          | C+A*B            | 10     | 10     | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mat_mul_system          | A*B              | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mat_mul_system          | C+A*B            | 10     | 10     | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:44 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10276 ; free virtual = 12913
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1857.196; parent = 1592.899; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:45 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10285 ; free virtual = 12923
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1867.532; parent = 1603.235; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_array_read_bias: | genblk2[0].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[1].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[2].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[3].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[4].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[5].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[6].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[7].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[0].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[1].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[2].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[3].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[4].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[5].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[6].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ram_array_read_bias: | genblk2[7].ram_/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------------+-----------+----------------------+------------------+
+|inst/o_ram  | genblk1[7].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[6].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[5].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[4].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[3].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[2].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[1].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
+|inst/o_ram  | genblk1[0].ram_/mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256  | 
++------------+-------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[0].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[1].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[2].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[3].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[4].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[5].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[6].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/w_ram/genblk2[7].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[0].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[1].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[2].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[3].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[4].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[5].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[6].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/a_ram/genblk2[7].ram_/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:49 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10262 ; free virtual = 12898
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1884.110; parent = 1619.813; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:53 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10259 ; free virtual = 12895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.721; parent = 1623.424; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:53 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10259 ; free virtual = 12895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.736; parent = 1623.439; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10260 ; free virtual = 12896
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.756; parent = 1626.459; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10260 ; free virtual = 12896
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1890.838; parent = 1626.541; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10259 ; free virtual = 12895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1891.771; parent = 1627.475; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10259 ; free virtual = 12895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1891.779; parent = 1627.482; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mat_mul_system          | (C+A*B)'    | 10     | 8      | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|mat_mul_system          | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mat_mul_system          | Dynamic     | -      | -      | -      | -      | 10     | -    | -    | -    | -    | -     | 0    | 0    | 
+|mat_mul_system          | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mat_mul_system          | Dynamic     | -      | -      | -      | -      | 10     | -    | -    | -    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | A*B+1       | 4      | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | A*B         | 4      | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | D+A*B'      | 10     | 10     | -      | 10     | 0      | 0    | 1    | -    | 1    | 0     | 0    | 0    | 
+|a_ram_address_generator | PCIN+A:B+C  | 0      | 7      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | D+A*B'      | 10     | 10     | -      | 10     | 0      | 0    | 1    | -    | 1    | 0     | 0    | 0    | 
+|a_ram_address_generator | PCIN+A:B+C  | 0      | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|a_ram_address_generator | C+A*B       | 4      | 10     | 2      | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|o_ram_address_generator | A'*B        | 10     | 4      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|o_ram_address_generator | D+A*B'      | 7      | 10     | -      | 0      | 0      | 0    | 1    | -    | 1    | 0     | 0    | 0    | 
+|o_ram_address_generator | PCIN+A:B+C  | 0      | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|o_ram_address_generator | A'*B+1      | 10     | 4      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe                      | C+A*B       | 30     | 18     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|w_ram_address_generator | A*B+1       | 10     | 4      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|w_ram_address_generator | A*B         | 10     | 4      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|w_ram_address_generator | D+A*B'      | 7      | 10     | -      | 10     | 0      | 0    | 1    | -    | 1    | 0     | 0    | 0    | 
+|w_ram_address_generator | PCIN+A:B+C  | 0      | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|w_ram_address_generator | C+A*B       | 10     | 4      | 2      | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   687|
+|2     |DSP48E1   |    85|
+|8     |LUT1      |   197|
+|9     |LUT2      |  1429|
+|10    |LUT3      |  3473|
+|11    |LUT4      |  2734|
+|12    |LUT5      |   451|
+|13    |LUT6      |  1953|
+|14    |MUXF7     |   288|
+|15    |RAM128X1D |  2048|
+|16    |RAMB18E1  |    16|
+|17    |FDCE      |  5465|
+|18    |FDRE      |   514|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:55 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10259 ; free virtual = 12895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1891.932; parent = 1627.635; children = 264.322
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4092.340; parent = 2610.168; children = 1482.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:45 . Memory (MB): peak = 2652.012 ; gain = 525.277 ; free physical = 10333 ; free virtual = 12969
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:55 . Memory (MB): peak = 2652.012 ; gain = 670.418 ; free physical = 10333 ; free virtual = 12969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.39 . Memory (MB): peak = 2652.012 ; gain = 0.000 ; free physical = 10557 ; free virtual = 13204
+INFO: [Netlist 29-17] Analyzing 3124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2652.012 ; gain = 0.000 ; free physical = 10471 ; free virtual = 13118
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2048 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 2048 instances
+
+Synth Design complete, checksum: ae3aade9
+INFO: [Common 17-83] Releasing license: Synthesis
+76 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:02:14 . Memory (MB): peak = 2652.012 ; gain = 1056.355 ; free physical = 10729 ; free virtual = 13376
+INFO: [Common 17-1381] The checkpoint '/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_mat_mul_system_0_0_synth_1/fpga_mat_mul_system_0_0.dcp' has been generated.
+WARNING: [Coretcl 2-1799] Unable to create IP cache entry for IP fpga_mat_mul_system_0_0: Unable to determine cache-id for IP fpga_mat_mul_system_0_0
+INFO: [Coretcl 2-1174] Renamed 481 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/user/vivado_step4_team4/vivado_step4_team4.runs/fpga_mat_mul_system_0_0_synth_1/fpga_mat_mul_system_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_mat_mul_system_0_0_utilization_synth.rpt -pb fpga_mat_mul_system_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  1 05:04:40 2023...

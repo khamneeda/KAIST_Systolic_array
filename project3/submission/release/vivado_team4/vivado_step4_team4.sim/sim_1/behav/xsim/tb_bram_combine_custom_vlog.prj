@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/ec67/hdl" --include "../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/ee60/hdl" --include "../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/f0b6/hdl/verilog" --include "../../../../tb_matmul.gen/sources_1/bd/fpga/ipshared/66be/hdl/verilog" --include "/home/user/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/a_ram_address_generator.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/adder.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/buffer.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/multiplier.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/mux.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/o_ram_address_generator.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/pe.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/ram.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/ram_array_read_bias.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/ram_array_write_bias.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/sys_arr.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/sys_control.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/w_ram_address_generator.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/matmul_system.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/ip/CS411_task1_A_0/sim/CS411_task1_A_0.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/ip/CS411_task1_A_1/sim/CS411_task1_A_1.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/ip/CS411_task1_A_2/sim/CS411_task1_A_2.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/ip/CS411_task1_axi_bram_ctrl_0_bram_0/sim/CS411_task1_axi_bram_ctrl_0_bram_0.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/ip/CS411_task1_xlconstant_0_1/sim/CS411_task1_xlconstant_0_1.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/ip/CS411_task1_xlconstant_0_2/sim/CS411_task1_xlconstant_0_2.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/ip/CS411_task1_mat_mul_system_0_0/sim/CS411_task1_mat_mul_system_0_0.v" \
+"../../../../tb_matmul.ip_user_files/bd/CS411_task1/sim/CS411_task1.v" \
+"../../../../tb_matmul.srcs/sources_1/imports/task1_verilog_steleton_code/aaa.v" \
+"../../../../tb_matmul.srcs/sim_1/imports/task1_test_bench/tb_bram_combine_custom.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

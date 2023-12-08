@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fpga_mat_mul_system_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1701406896">
+  <File Type="VDS-TIMINGSUMMARY" Name="fpga_mat_mul_system_0_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="fpga_mat_mul_system_0_0.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="fpga_mat_mul_system_0_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="fpga_mat_mul_system_0_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="fpga_mat_mul_system_0_0_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="fpga_mat_mul_system_0_0.vds"/>
+  <File Type="REPORTS-TCL" Name="fpga_mat_mul_system_0_0_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="fpga_mat_mul_system_0_0_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="fpga_mat_mul_system_0_0.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fpga_mat_mul_system_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/fpga/ip/fpga_mat_mul_system_0_0/fpga_mat_mul_system_0_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../tb_matmul/tb_matmul.srcs/sources_1/bd/fpga/ip/fpga_mat_mul_system_0_0/fpga_mat_mul_system_0_0.xci"/>
+        <Attr Name="ImportTime" Val="1701358070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fpga_mat_mul_system_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fpga_mat_mul_system_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/fpga/ip/fpga_mat_mul_system_0_0/fpga_mat_mul_system_0_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../tb_matmul/tb_matmul.srcs/sources_1/bd/fpga/ip/fpga_mat_mul_system_0_0/fpga_mat_mul_system_0_0.xci"/>
+        <Attr Name="ImportTime" Val="1701358070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fpga_mat_mul_system_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/CS411_task1_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task1/task1.srcs/utils_1/imports/synth_1/CS411_task1_wrapper.dcp"/>
+        <Attr Name="ImportTime" Val="1701406534"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"CS411_task1": {
+			"proto_instances": {
+			}
+		}
+	}
+}
